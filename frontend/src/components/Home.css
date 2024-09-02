@@ -1,0 +1,71 @@
+/* Container styling */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Heading style */
+.home-container h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Quote style */
+.quote {
+    font-size: 1.5em;
+    color: #34495e;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+/* Motivation text style */
+.motivation {
+    font-size: 1.2em;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+}
+
+/* Image styling */
+.home-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .home-container h1 {
+        font-size: 2em;
+    }
+
+    .quote {
+        font-size: 1.2em;
+    }
+
+    .motivation {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-container h1 {
+        font-size: 1.5em;
+    }
+
+    .quote {
+        font-size: 1em;
+    }
+
+    .motivation {
+        font-size: 0.9em;
+    }
+}

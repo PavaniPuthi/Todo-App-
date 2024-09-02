@@ -1,0 +1,105 @@
+.edit-task-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f7f9fc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.edit-task-container h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.edit-task-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-task-container input,
+.edit-task-container select {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.edit-task-container input:focus,
+.edit-task-container select:focus {
+    border-color: #007bff;
+}
+
+.edit-task-container button {
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-task-container button:hover {
+    background-color: #218838;
+}
+
+.edit-task-container button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.5);
+}
+
+.edit-task-container select {
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .edit-task-container {
+        max-width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .edit-task-container h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .edit-task-container input,
+    .edit-task-container select,
+    .edit-task-container button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .edit-task-container {
+        max-width: 100%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    .edit-task-container h2 {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+
+    .edit-task-container input,
+    .edit-task-container select,
+    .edit-task-container button {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+}
